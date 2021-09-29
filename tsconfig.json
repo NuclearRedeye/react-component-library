@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "ESNEXT",
+    "module": "ESNext",
+    "allowJs": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": false,
+    "moduleResolution": "node",
+    "jsx": "react",
+    "outDir": "./out/debug/",
+    "rootDir": "src",
+  },
+  "include": ["./src/**/*.ts", "./src/**/*.tsx"],
+  "exclude": ["./src/**/*.spec.ts", "./src/**/*.test.ts", "./src/**/*.spec.tsx", "./src/**/*.test.tsx"]
+}
