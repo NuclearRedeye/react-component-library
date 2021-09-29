@@ -2,8 +2,12 @@
   "name": "react-component-library",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "type": "module",
+  "main": "./out/release/index.js",
+  "module": "./out/release/index.es.js",
+  "files": [
+    "./out/release"
+  ],
   "scripts": {
     "build": "tsc && node-sass -o ./out/debug ./src",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -14,6 +18,12 @@
     "@types/react": "^17.0.25",
     "node-sass": "^6.0.1",
     "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "rollup": "^2.57.0",
     "typescript": "^4.4.3"
+  },
+  "peerDependencies": {
+    "react": ">=17.0.2",
+    "react-dom": ">=17.0.2"
   }
 }
