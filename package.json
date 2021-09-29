@@ -5,13 +5,14 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "build": "tsc",
+    "build": "tsc && node-sass -o ./out/debug ./src",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "NuclearRedeye",
   "license": "MIT",
   "devDependencies": {
     "@types/react": "^17.0.25",
+    "node-sass": "^6.0.1",
     "react": "^17.0.2",
     "typescript": "^4.4.3"
   }
