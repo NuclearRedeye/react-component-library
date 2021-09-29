@@ -4,6 +4,8 @@
     "module": "ESNext",
     "allowJs": true,
     "esModuleInterop": true,
+    "declaration": true,
+    "sourceMap": true,    
     "allowSyntheticDefaultImports": true,
     "strict": false,
     "moduleResolution": "node",
