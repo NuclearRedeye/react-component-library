@@ -1,5 +1,1 @@
-import { Increment } from "./components/increment";
-
-export default {
-  Increment
-};
+export { Increment } from "./components/increment";
