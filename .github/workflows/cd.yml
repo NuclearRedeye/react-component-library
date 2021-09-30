@@ -1,0 +1,38 @@
+name: Continuous Deployment
+
+on:
+  push:
+    branches:
+      - master
+    tags:        
+      - v*
+  pull_request:
+
+jobs:
+  cd:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+          registry-url: 'https://registry.npmjs.org'
+      - name: Checking code for styling issues
+        run: |
+          npm run format
+      - name: Checking code for linting issues
+        run: |
+          npm run lint
+      - name: Checking unit tests pass
+        run: |
+          npm run test
+      - name: Checking code builds
+        run: |
+          npm run build
+      # Only publish for a tagged release that starts with a lowercase v
+      - name: Publish to npmjs.com
+        if: contains(github.ref, 'refs/tags/v')
+        run: |
+          npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.npm_token}}
