@@ -3,12 +3,18 @@
   "version": "1.0.0",
   "description": "A template React Component Library that can be used to seed a new project",
   "type": "module",
+  "author": "NuclearRedeye",
+  "license": "MIT",
+  "homepage": "https://github.com/NuclearRedeye/react-component-library#readme",
   "main": "out/release/index.js",
   "module": "out/release/index.es.js",
   "style": "out/release/index.css",
   "files": [
     "./out/release"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "format": "echo \"Nothing to do for target 'format'\"",
     "lint": "echo \"Nothing to do for target 'lint'\"",
@@ -16,8 +22,7 @@
     "test": "echo \"Nothing to do for target 'test'\"",
     "release": "standard-version"
   },
-  "author": "NuclearRedeye",
-  "license": "MIT",
+
   "devDependencies": {
     "@types/react": "^17.0.25",
     "node-sass": "^6.0.1",
