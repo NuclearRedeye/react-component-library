@@ -1,7 +1,7 @@
 {
   "name": "@nuclearredeye/react-component-library",
   "version": "1.0.0",
-  "description": "",
+  "description": "A template React Component Library that can be used to seed a new project",
   "type": "module",
   "main": "out/release/index.js",
   "module": "out/release/index.es.js",
