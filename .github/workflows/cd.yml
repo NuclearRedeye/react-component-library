@@ -17,6 +17,9 @@ jobs:
         with:
           node-version: '14'
           registry-url: 'https://registry.npmjs.org'
+      - name: Install prerequisites
+        run: |
+          npm install
       - name: Checking code for styling issues
         run: |
           npm run format
