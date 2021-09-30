@@ -13,7 +13,8 @@
     "format": "echo \"Nothing to do for target 'format'\"",
     "lint": "echo \"Nothing to do for target 'lint'\"",
     "build": "tsc && node-sass ./src/index.scss ./out/debug/index.css && rollup -c",
-    "test": "echo \"Nothing to do for target 'test'\""
+    "test": "echo \"Nothing to do for target 'test'\"",
+    "release": "standard-version"
   },
   "author": "NuclearRedeye",
   "license": "MIT",
@@ -24,6 +25,7 @@
     "react-dom": "^17.0.2",
     "rollup": "^2.57.0",
     "rollup-plugin-copy": "^3.4.0",
+    "standard-version": "^9.3.1",
     "typescript": "^4.4.3"
   },
   "peerDependencies": {
