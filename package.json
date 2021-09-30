@@ -1,6 +1,6 @@
 {
   "name": "@nuclearredeye/react-component-library",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A template React Component Library that can be used to seed a new project",
   "type": "module",
   "author": "NuclearRedeye",
@@ -22,7 +22,6 @@
     "test": "echo \"Nothing to do for target 'test'\"",
     "release": "standard-version"
   },
-
   "devDependencies": {
     "@types/react": "^17.0.25",
     "node-sass": "^6.0.1",
