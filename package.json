@@ -6,11 +6,11 @@
   "author": "NuclearRedeye",
   "license": "MIT",
   "homepage": "https://github.com/NuclearRedeye/react-component-library#readme",
-  "main": "out/release/index.js",
-  "module": "out/release/index.es.js",
+  "main": "out/release/index.cjs.js",
+  "module": "out/release/index.esm.js",
   "style": "out/release/index.css",
   "files": [
-    "./out/release"
+    "out/release"
   ],
   "publishConfig": {
     "access": "public"
