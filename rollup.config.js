@@ -20,5 +20,6 @@ export default {
         { src: ['./out/debug/index.css'], dest: './out/release/' },
       ]
     })
-  ]
+  ],
+  external: ['react']
 };
