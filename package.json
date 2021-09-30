@@ -10,8 +10,10 @@
     "./out/release"
   ],
   "scripts": {
+    "format": "echo \"Nothing to do for target 'format'\"",
+    "lint": "echo \"Nothing to do for target 'lint'\"",
     "build": "tsc && node-sass ./src/index.scss ./out/debug/index.css && rollup -c",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Nothing to do for target 'test'\""
   },
   "author": "NuclearRedeye",
   "license": "MIT",
